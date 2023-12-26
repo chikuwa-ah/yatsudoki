@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>やつどき</title>
+
+    <style type="text/css">
+        #photo {
+            width: 800px;
+            height: 600px;
+            margin: 0 auto;
+            text-align: left;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #photo img {
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+    </style>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var setImg = '#photo';
+            var fadeSpeed = 1600;
+            var switchDelay = 5000;
+
+            $(setImg).children('img').css({ opacity: '0' });
+            $(setImg + ' img:first').stop().animate({ opacity: '1', zIndex: '20' }, fadeSpeed);
+
+            setInterval(function () {
+                $(setImg + ' :first-child').animate({ opacity: '0' }, fadeSpeed).next('img').animate({ opacity: '1' }, fadeSpeed).end().appendTo(setImg);
+            }, switchDelay);
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <img class="top_img" src="./img/top_img.png" width="800px">
+
+    <div class="top_logo">
+        <img src="./img/logo_beside.png">
+    </div>
+
+    <div class="link">
+        <a href="./menu/menu.html">お品書き</a>
+        <a href="./shoping/shoping.html">お買い物</a>
+    </div>
+
+    <div class="center">
+        <div class="description">
+            <img src="./img/omote.png">
+            <p>　　身体は食べたもので作られる。　　　　　　　　</p>
+            <p>　　やつどきでは、安心できる材料を使い、　　　　</p>
+            <p>　　シンプルなおやつを作っています。　　　　　　</p>
+            <p>　　粉の味、果物の味、ナッツの味がちゃんとして、</p>
+            <p>　　お腹も満足できるように。　　　　　　　　　　</p>
+            <p>　　毎日のおやつの時間のお手伝いが　　　　　　　</p>
+            <p>　　できたらいいな。と思うのです。　　　　　　　</p>
+        </div>
+    </div>
+
+    <div id="photo" class="profile">
+        <img src="./img/1.jpg" width="800" height="600">
+        <img src="./img/2.jpg" width="800" height="600">
+        <img src="./img/3.jpg" width="800" height="600">
+        <img src="./img/4.jpg" width="800" height="600">
+        <img src="./img/5.jpg" width="800" height="600">
+        <img src="./img/6.jpg" width="800" height="600">
+    </div>
+    <div class="content">
+        <p>場所｜福井県福井市勝見３丁目</p>
+        <p>営業日｜不定期</p>
+        <p>Instagram｜<a href="https://www.instagram.com/yatsudoki.oyatsu/">@yatudoki.oyatsu</a></p>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="logo">
+        <a href="index.html"><img src="./img/logo.png" width="45px"></a>
+        <a class="right_side" href="https://www.instagram.com/yatsudoki.oyatsu/"><img src="./img/instaglam.png"
+                width="40px"></a>
+    </div>
+    <div class="footer">
+        <small>© 2023 やつどき</small>
+    </div>
+
+</body>
+
+</html>

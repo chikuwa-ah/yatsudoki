@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'hannari';
+    src: url(./font/Hannari_Mincho.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'hannari-vertical';
+    src: url(./font/Hannari_vertical.woff) format('woff');
+}
+
+body {
+    margin: 0;
+    font-family: 'hannari';
+    user-select: none;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+
+.top_img {
+    width: 100%;
+}
+
+.top_logo img {
+    width: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.link a {
+    margin: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+a {
+    transition: all 0.5s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+.center {
+    text-align: center;
+}
+
+.description img {
+    width: 200px;
+    display: inline-block;
+}
+
+.description {
+    margin-top: 15%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 30px;
+    color: #000;
+    writing-mode: vertical-rl;
+    display: inline-block;
+}
+
+.description p {
+    font-family: 'hannari-vertical';
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.content {
+    padding-top: 20px;
+    padding-left: 50px;
+    margin: 0 auto;
+    width: 800px;
+}
+
+.content a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* FOOTER */
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 120px;
+}
+
+.logo .right_side {
+    padding-left: 15px;
+    padding-bottom: 2px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 18px;
+}

@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'hannari';
+    src: url(../font/Hannari_Mincho.woff) format('woff');
+}
+
+body {
+    font-family: 'hannari';
+    margin: 0;
+    user-select: none;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+
+.top_img {
+    width: 100%;
+}
+
+.top_logo img {
+    width: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.link a {
+    margin: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+a {
+    transition: all 0.5s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+.top_index {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.top_index p {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 25px;
+}
