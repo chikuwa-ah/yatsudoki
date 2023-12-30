@@ -63,3 +63,29 @@ a:hover {
     font-size: 40px;
     letter-spacing: 25px;
 }
+
+
+/* footer */
+
+.footer{
+    margin-top: 80px;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    background-color: #8f8f8f;
+}
+
+.fot_img{
+    margin-left: 20%;
+}
+
+.instaglam {
+    padding-bottom: 20px;
+    margin-left: 3%;
+}
+
+.footer footer{
+    color: #fff;
+    text-align: right;
+    letter-spacing: 0.3em;
+    margin-right: 20%;
+}
