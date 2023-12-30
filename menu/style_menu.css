@@ -16,6 +16,7 @@ img {
 
 .top_img {
     width: 100%;
+    /* filter: blur(3px); */
 }
 
 .top_logo img {
@@ -89,6 +90,10 @@ a:hover {
     color: #777;
     text-decoration: none;
     font-size: 20px;
+}
+
+.img_div img::after{
+    box-shadow: inset 0 0 10px 15px #FFF;
 }
 
 
