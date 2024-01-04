@@ -14,7 +14,7 @@ img {
 }
 
 .top_logo img{
-    width: 15%;
+    width: 200px;
     filter: brightness(0.3);
 }
 
@@ -43,9 +43,6 @@ a:hover {
 }
 
 
-.introduction{
-    
-}
 .title{
     margin-top: 4%;
     font-size: 30px;
@@ -53,11 +50,57 @@ a:hover {
     text-align: center;
 }
 
-.introduction img{
-    padding-top: 50px;
-    width: 50%;
+.page img{
+    padding-top: 3%;
+    width: 800px;
     margin: auto;
     display: block;
 }
 
-.material
+.introduction{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0 auto;
+    width: 800px;
+}
+.introduction h1{
+    font-size: 20px;
+    padding-left: 20px;
+    letter-spacing: 0.2em;
+}
+.introduction .material{
+    padding-left: 50px;
+}
+.comment{
+    text-align: center;
+}
+
+
+
+
+/* footer */
+
+.footer{
+    margin-top: 80px;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    background-color: #8f8f8f;
+}
+
+.fot_img{
+    margin-left: 20%;
+}
+
+.instaglam {
+    padding-bottom: 20px;
+    margin-left: 3%;
+}
+
+.footer footer{
+    color: #fff;
+    text-align: right;
+    letter-spacing: 0.3em;
+    margin-right: 20%;
+}
