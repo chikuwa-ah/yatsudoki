@@ -72,6 +72,7 @@ a:hover {
 }
 .introduction .material{
     padding-left: 50px;
+    margin: 0 auto;
 }
 .comment{
     text-align: center;
